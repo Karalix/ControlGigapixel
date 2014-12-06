@@ -9,21 +9,30 @@
     tools:context=".MyActivity">
 
 
-    <view
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        class="com.zerokol.views.JoystickView"
-        android:id="@+id/joystickView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/joystickState"
         android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Coucou"
+        android:onClick="startDiscover" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listBluetoothDevices"
+        android:layout_below="@+id/joystickState"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
